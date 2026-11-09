@@ -6,7 +6,7 @@ plugins {
 android {
     namespace = "com.example.app20_jc_cinco_sensores_mvvm"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
     }
@@ -49,6 +49,14 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
     testImplementation(libs.junit)
+
+    //Semana 13 - Sensores
+    //ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    //Collect
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
